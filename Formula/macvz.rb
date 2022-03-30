@@ -7,6 +7,8 @@ class Macvz < Formula
   head "https://github.com/mac-vz/macvz.git", branch: "main"
 
   depends_on "go" => :build
+  depends_on macos: :monterey
+  depends_on :macos
 
   def install
     system "make", "VERSION=#{version}", "clean", "binaries"
