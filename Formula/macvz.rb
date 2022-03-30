@@ -10,6 +10,7 @@ class Macvz < Formula
 
   def install
     system "make", "VERSION=#{version}", "clean", "binaries", "codesign"
+    system "codesign", "--entitlements", "vz.entitlements", "-s", "-", "_output/bin/macvz"
 
     bin.install Dir["_output/bin/*"]
     share.install Dir["_output/share/*"]
