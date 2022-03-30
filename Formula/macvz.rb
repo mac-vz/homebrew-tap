@@ -9,7 +9,7 @@ class Macvz < Formula
   depends_on "go" => :build
 
   def install
-    system "make", "VERSION=#{version}", "clean", "binaries", "codesign"
+    system "make", "VERSION=#{version}", "clean", "binaries"
     system "codesign", "--entitlements", "vz.entitlements", "-s", "-", "_output/bin/macvz"
 
     bin.install Dir["_output/bin/*"]
