@@ -1,8 +1,8 @@
 class Macvz < Formula
   desc "macOS Virtualization"
   homepage "https://github.com/mac-vz/macvz"
-  url "https://github.com/mac-vz/macvz/archive/v0.0.3.tar.gz"
-  sha256 "7b139eb1c0bffb550b6eaaf60ec0b780fb1554c3d5ec7fbbe66c2764e0e3b553"
+  url "https://github.com/mac-vz/macvz/archive/v0.0.4.tar.gz"
+  sha256 "54e4c658721816913de6d6e480e07395cb590c2d3f99bb3c5aa0121161cdcc56"
   license "MIT"
   head "https://github.com/mac-vz/macvz.git", branch: "main"
 
